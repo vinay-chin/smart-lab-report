@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Tests</title>
+</head>
+<body>
+  <h1>Lab Tests</h1>
+  <div id="labTests"></div>
+
+  <script>
+    fetch('/api/labTests')
+      .then(response => response.json())
+      .then(data => {
+        const labTestsDiv = document.getElementById('labTests');
+        data.forEach(labTest => {
+          labTestsDiv.innerHTML += `
+            <div>
+              <h2>${labTest.customer_name}</h2>
+              <p>Booking ID: ${labTest.booking_id}</p>
+              <p>Collection Date: ${labTest.collection_date}</p>
+              <p>Booking Date: ${labTest.booking_date}</p>
+            </div>
+          `;
+        });
+      })
+      .catch(error => console.error('Error fetching lab tests:', error));
+  </script>
+</body>
+</html>

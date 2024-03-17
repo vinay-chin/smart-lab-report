@@ -17,6 +17,14 @@
           <p class="text-white mb-4">Backend Developer</p>
           <a href="https://github.com/BonuNagavamsiVardhan" class="text-white border p-2 rounded-lg hover:text-gray-300">View Profile</a>
         </div>
+        <div class="bg-gray-800 rounded-lg p-8">
+          <img src="../assets/Manoj.jpg" alt="VAMSI VARDHAN BONU"
+            class="w-full h-96 rounded-lg object-cover mb-4">
+          <h3 class="text-lg font-bold text-white mb-2">Manoj Mannava</h3>
+          <p class="text-white mb-4">Full stack Developer</p>
+          <a href="https://github.com/Manoj-Mannava" class="text-white border p-2 rounded-lg hover:text-gray-300">View Profile</a>
+        </div>
+
 
       </div>
     </div>
